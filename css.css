@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;600&display=swap');
+
+body{
+    font-family: Akshar;
+    font-size: 16px;
+    background-color: #003641;
+    box-sizing: border-box;
+}
+
+#conteudo{
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 40px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.destaque{
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 2px;
+    margin: auto;    
+}
+
+.code{    
+    font-family: 'Courier New', Courier, monospace;    
+    font-size: 0.8rem;
+    background-color: black;
+    color: chartreuse;
+    padding: 15px;
+    border-radius: 2px;
+    border-right: 10px solid #003641;   
+}
+
+footer, a{
+    text-align: center;
+    color: #f9f9f9;
+    padding-top: 20px;    
+    padding-bottom: 10px;    
+}
+
+.comando{
+    float: right;
+    color: chartreuse;
+}
+
+p{
+    text-align: justify;
+    padding-right: 10px;
+}
