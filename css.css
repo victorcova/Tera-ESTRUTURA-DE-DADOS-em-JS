@@ -10,8 +10,7 @@ body{
 #conteudo{
     background-color: #f9f9f9;
     max-width: 600px;
-    margin: 40px;
-    margin: auto;
+    margin: 40px;    
     padding: 20px;
     border-radius: 2px;
 }
@@ -22,23 +21,6 @@ body{
     padding: 15px;
     border-radius: 2px;
     margin: auto;    
-}
-
-.code{    
-    font-family: 'Courier New', Courier, monospace;    
-    font-size: 0.8rem;
-    background-color: black;
-    color: chartreuse;
-    padding: 15px;
-    border-radius: 2px;
-    border-right: 10px solid #003641;   
-}
-
-footer, a{
-    text-align: center;
-    color: #f9f9f9;
-    padding-top: 20px;    
-    padding-bottom: 10px;    
 }
 
 .comando{

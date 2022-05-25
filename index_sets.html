@@ -8,82 +8,54 @@
 
     <title>SETS -> CONJUNTOS</title>    
 </head>
-<body>
+<body>    
     <section id="conteudo">
-        <div class="destaque">[abra o console para ver o código] <span class="comando">[F12]</span></div>
+        <h1>ESTRUTURA DE DADOS</h1>
+        <div class="destaque">[abra o console para ver o código] <span class="comando">[F12]</span></div>                      
 
-        <h1>Os conjuntos no mundo da computação</h1>
+        <h3>Sets (Conjuntos):</h3>
         <p>
-            Set é outra nova coleção introduzida pelo ES6. A classe array do JavaScript pode funcionar com coleção ordenada de dados, mas não tão bem com coleções não ordenadas, ou quando os valores mantidos na coleção são únicos. É por isso que o JavaScript introduziu o Set.
+            A classe array do JavaScript pode funcionar com coleção ordenada de dados, mas não tão bem com coleções não ordenadas, ou quando os valores mantidos na coleção são únicos. É por isso que o JavaScript introduziu o Set.
         </p>
         <p>
             Set é uma coleção única de tipos primitivos e objetos, e duplicatas não são permitidas. Assim, podemos criar um conjunto vazio e adicionar objetos, ou podemos inicializar um conjunto com o conteúdo de um iterável (como um array).
         </p>
-        <p> 
-            Essa estrutura de dados é considerada como “coleção com chaves” (keyed collection). Coleções com chaves são, como o nome já diz, coleções que usam chaves. Estas coleções contêm elementos que são iteráveis na ordem de inserção. Portanto, são como um dicionário de idiomas, em que a busca se dá por palavras, que são os valores que buscamos, e não pela ordem dos significados.
-        </p>E assim, como qualquer estrutura de dados, ela possui vantagens e desvantagens, são elas:</p>
         <p>
-        <strong>VANTAGENS:</strong>
-        <ul>
-            <li>Não possui duplicatas;</li>
-            <li>Encontra facilmente a união, interseção e diferença entre dois conjuntos de dados;</li>
-            <li>Permite buscar por um valor.</li>
-        </ul>
+            Essa estrutura de dados é considerada como “coleção com chaves” (keyed collection). Coleções com chaves são, como o nome já diz, coleções que usam chaves. Estas coleções contêm elementos que são iteráveis na ordem de inserção. Portanto, são como um dicionário de idiomas, em que a busca se dá por palavras, que são os valores que buscamos, e não pela ordem dos significados
         </p>
-        <p>
-        <strong>DESVANTAGENS:</strong>
-        <ul>
-            <li>Não possui duplicatas (apesar de ser uma vantagem é uma desvantagem quando é necessário tal ação);</li>
-            <li>Arrays têm uma vantagem significativa sobre Set para manipulação adicional dos dados devido aos métodos;</li>
-            <li>Não é possível acessar um elemento aleatório (apenas mediante chaves);</li>
-            <li>A iteração não é otimizada.</li>
-        </ul>                
-        </p>
-        <p>
-            Assim, se comparado ao Array, Set realmente não tem uma grande vantagem sobre ela, exceto em cenários específicos, como quando queremos manter dados distintos/não duplicados com o mínimo de esforço, ou trabalhar com vários conjuntos de dados distintos ao mesmo tempo, usando as operações mais básicas do Set, sem a necessidade de acessar elementos diretamente.
-        </p>
-        <p>Para implementar um set, uma forma possível é como aparece no seguinte exemplo:</p>
-        <div class="code">
-            // Criando um conjunto vazio <br>
-            // const emptySet = new Set(); <br>
-            <br>
-            <br>
-            // Criando um conjunto a partir de um array<br>
-            const set = new Set([45,68,92]);<br>
-            <br>
-            // Verificando se existe elemento<br>
-            console.log('No SET há a chave 68?\n',set.has(68));<br>
-            // Verificando se existe elemento<br>
-            console.log('No SET há a chave 1?\n',set.has(1)); // false<br>
-            <br>
-            // Percorrendo um conjunto<br>
-            console.log('Percorrendo um SET com o loop FOR/OF:\n',)<br>
-            for(const item of set) {<br>
-                console.log('CHAVE: ',item);<br>
-            }<br>
-            <br>
-            // Inserindo um elemento<br>
-            set.add(4);<br>
-            console.log('Adicionando ao SET a chave 4:\n',set);<br>
-            <br>
-            // Removendo um elemento<br>
-            set.delete(4);<br>
-            console.log('Removendo do SET a chave 4:\n',set);<br>
-            <br>
-            // Removendo todos os elementos<br>
-            set.clear();<br>
-            console.log('Removendo todos os valores do SET:\n',set);<br>
-    </div>
 
-        <p>Provavelmente, Set não será a estrutura de dados que você mais utilizará. </p>
-        <p>
-            Ela se parece muito com array, mas não tem nenhuma grande vantagem na sua utilização, exceto em cenários muito específicos, como quando queremos manter dados distintos com o mínimo de esforço (porque com um pouco de esforço é possível implementar com outras estruturas), ou trabalhar com vários conjuntos de dados distintos ao mesmo tempo usando as operações mais básicas do Set, sem a necessidade de acessar elementos diretamente.
-        </p>                
-    </section>
+        <hr>
 
-    <footer>
-        &copy; Conteúdo pertencente à <a href="https://somostera.com/">TERA</a>
-    </footer>
+        <h3>Listas encadeadas:</h3>
+        <p>
+            Uma lista encadeada é uma coleção linear de elementos (ou nós), em que a ordem linear não é dada por sua localização física na memória. Em vez disso, cada elemento aponta para o próximo (um ponteiro).
+        </p>
+        <p>
+            É uma estrutura de dados consistindo em um grupo de nós que juntos representam uma sequência. Sob a forma mais simples, cada nó é composto de dados e uma referência (ligação/conexão) para o próximo nó na sequência. Esta estrutura permite uma eficiente inserção e remoção de elementos de qualquer posição na sequência durante a iteração.
+        </p>
+        <img src="imgs/Lista_encadeada_simples_representacao.png" alt="lista encadeada simples" style="max-width: 100%; border: 1px dotted #003641; margin-bottom: 20px;">
+        
+        <hr>
+
+        <h3>Filas:</h3>
+        <p>
+            Uma fila é um tipo abstrato de dados ou coleção em que as suas entidades são mantidas em ordem. As principais (ou únicas) operações na coleção são a adição de entidades à última posição, conhecida como enfileiramento (queue), e remoção de entidades da primeira posição, conhecida como desenfileiramento (dequeue). 
+        </p>
+        <p>
+            Isso torna a fila uma estrutura de dados First-In-First-Out (FIFO). Em uma estrutura de dados FIFO, o primeiro elemento adicionado à fila será o primeiro a ser removido.
+        </p>
+        <p>
+            Isso é equivalente ao requisito de que, uma vez que um novo elemento seja adicionado, todos os elementos que foram adicionados antes devem ser removidos antes que o novo elemento possa ser removido.
+        </p>
+
+        <img src="imgs/fila.JPG" alt="exemplo de fila" style="width: 600px; border: 1px dotted #003641; margin-bottom: 20px;">
+
+        <hr>
+
+        
+
+
+    </section>    
 
     <script src="sets.js"></script>
     
