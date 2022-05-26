@@ -2,14 +2,14 @@ console.log('----- TREINAMENTO TERA FILAS: -----');
 
 // CONCEITO FIFO: FIRT IN FIRST OUT -> O PRIMEIRO A ENTRAR É O PRIMEIRO A SAIR (PEPS).
 
-export class QueueNode { // Queue = Fila
+class QueueNode { // Queue = Fila
     constructor(value){
         this.value = value; // capta o valor do nó da fila
         this.next = null; // capta o valor do proximo nó da fila
     }
 }
 
-export class Queue { // classe que contém os nós
+class Queue { // classe que contém os nós
     constructor(){
         this.first = null; // capta que é o primeiro nó da lista
         this.last = null; // capta que é o ultimo nó da lista

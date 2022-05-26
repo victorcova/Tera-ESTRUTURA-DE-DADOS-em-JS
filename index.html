@@ -66,9 +66,10 @@
         </p>                        
 
         <div style="display: flex;  align-items: center;">
-            <div><p>
-                Em uma estrutura de dados LIFO, o último elemento adicionado à pilha será o primeiro a ser removido. O nome "stack" para este tipo de estrutura vem da analogia de um conjunto de itens físicos empilhados uns sobre os outros, o que facilita retirar um item do topo da pilha, enquanto que, por outro lado, para chegar a um item mais profundo na pilha é necessário a retirada de vários outros itens primeiro. Exemplo abaixo:
-            </p>
+            <div>
+                <p>
+                    Em uma estrutura de dados LIFO, o último elemento adicionado à pilha será o primeiro a ser removido. O nome "stack" para este tipo de estrutura vem da analogia de um conjunto de itens físicos empilhados uns sobre os outros, o que facilita retirar um item do topo da pilha, enquanto que, por outro lado, para chegar a um item mais profundo na pilha é necessário a retirada de vários outros itens primeiro. Exemplo abaixo:
+                </p>
             </div>
             <div style="color: gray; text-align: center; font-style: italic;">
                 <img src="imgs/torre-de-hanoi.png" alt="torre de hanoi" style="width: 200px; border: 1px dotted #003641;">
@@ -83,12 +84,38 @@
         <hr>
 
 
+        <h3>Árvores Binárias:</h3>
+
+        <p>
+            Uma árvore é uma estrutura de dados abstrata, amplamente utilizada, que simula uma estrutura hierárquica de árvore (de ponta-cabeça), com valor raíz e sub-árvores de filhos com um nó pai que é representado como um conjunto de nós conectados.
+        </p>
+
+        <p>
+            Analogia: Pense na estrutura de pastas do seu PC. Essa estrutura tem pastas na raiz e subpastas e mais subpastas... Assim por diante, como uma árvore.
+        </p>
+
+        <p>
+            Uma estrutura de dados em árvore pode ser definida recursivamente como uma coleção de nós (começando no nó raiz), onde cada nó é uma estrutura de dados consistindo de um valor, junto com uma lista de referências a outros nós (os "filhos"), com as restrições de que nenhuma referência é duplicada e nenhuma aponta para a raiz.
+        </p>
+
+        <img src="imgs/arvore-binaria.png" alt="torre de hanoi" style="width: 600px; border: 1px dotted #003641;">                
+
+        <p>
+            Observe que na imagem acima a representação coloca os números maiores à direita e os números menores à esquerda. Inclusive com os filhos. Logo se eu quiser fazer uma busca ela é otimizada. Suponhamos que eu queira fazer uma busca do valor '4' nessa árvore (imagem acima), que tem como raiz o número 6. Logo a busca será otimizada devido ao fato que a busca ira acontecer para a esquerda, sabendo-se que o nº 4 é menor que o nó raiz nº 6.
+        </p>
+
+        <div> <a href="pilhas.js" class="lnk" target="_blank">ver código js</a> </div>
+
+        <hr>
+
+
     </section>    
 
     <script src="sets.js"></script>
     <script src="listas-encadeadas.js"></script>
     <script src="filas.js"></script>
     <script src="pilhas.js"></script>
+    <script src="arvores-binarias.js"></script>
     
 </body>
 </html>

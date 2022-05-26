@@ -4,14 +4,14 @@ console.log('----- TREINAMENTO TERA PILHA: -----');
 // Uma pilha tem 2 métodos principais o PUSH (insere o nó) e o POP (remove o nó).
 // STACK = PILHA
 
-export class StackNode { // começamos criando uma classe que será o nosso nó - conterá o valor e o próximo da lista
+class StackNode { // começamos criando uma classe que será o nosso nó - conterá o valor e o próximo da lista
     constructor(value, next = null){
         this.value = value;
         this.next = next;
     }    
 }
 
-export class Stack{ // classe que contém os nós das pilhas
+class Stack{ // classe que contém os nós das pilhas
     constructor(){
         this.pop = null;
     }
